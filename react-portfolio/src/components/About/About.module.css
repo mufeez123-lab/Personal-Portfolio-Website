@@ -1,0 +1,165 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  background-color: rgba(12, 12, 12, 0.6);
+  border-radius: 15px;
+  padding: 73px;
+  margin-top: 129px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.aboutItems {
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.aboutItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+  padding: 25px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(165, 215, 232, 0.42) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+  flex-basis: 100%;
+}
+
+.aboutItem img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+/* Animation for React image */
+.aboutItem:first-child img {
+  animation: rotateClockwise 5s linear infinite;
+}
+
+/* Animation for Node.js image */
+.aboutItem:nth-child(2) img {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+/* Animation for third image */
+.aboutItem:nth-child(3) img {
+  animation: fadeInOut 4s ease-in-out infinite;
+}
+
+@keyframes rotateClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.aboutItem:hover {
+  background-size: 100% 100%;
+}
+
+.aboutItem h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.aboutItem p {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 40px; /* Adjust top margin to bring it closer to the hero section */
+  }
+  .title{
+    font-size: 35px; /* Adjust font size if necessary */
+    font-weight: 700;
+    text-align: center; /* Center-align the title */
+    margin: 0 auto; /*
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Reduced gap to bring about section closer to the title */
+  }
+
+  .aboutItems {
+    margin-top: 20px; /* Reduced top margin for better alignment */
+    align-items: center;
+  }
+
+  .aboutItem {
+    padding-left: 20px; /* Reduced padding for better spacing */
+    padding-right: 20px;
+    width: 126%; /* Adjust width to fit the screen */
+  }
+
+  .aboutItem:hover {
+    background-size: 100% 100%; /* Hover effect for about item */
+    transform: scale(1.05); /* Optional: adds a slight zoom effect on hover */
+  }
+
+  .aboutItem:first-child img {
+    animation: rotateClockwise 5s linear infinite;
+  }
+
+  .aboutItem:nth-child(2) img {
+    animation: pulse 3s ease-in-out infinite;
+  }
+
+  .aboutItem:nth-child(3) img {
+    animation: fadeInOut 4s ease-in-out infinite;
+  }
+
+  .aboutImage {
+    display: none;
+  }
+}

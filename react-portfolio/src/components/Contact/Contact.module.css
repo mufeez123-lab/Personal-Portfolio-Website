@@ -1,0 +1,127 @@
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin-top: 120px;
+  background: linear-gradient(to bottom, black, #1d079c); /* Linear gradient from top (black) to bottom (blue) */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  padding: 58px 10%;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+
+.text h2 {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.text p {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  gap: 26px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.link a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+/* Styles for the copyright section */
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center; /* Center align the copyright text */
+  color: var(--color-text); /* Use your text color */
+}
+
+
+/* Media Query for Medium Screens */
+/* Media Query for Medium Screens (up to 830px) */
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text on small screens */
+  }
+
+  .text h2 {
+    font-size: 60px; /* Adjust font size for smaller screens */
+  }
+
+  .text p {
+    font-size: 30px; /* Adjust font size for smaller screens */
+  }
+
+  .links {
+    align-items: center; /* Center align the links */
+    gap: 20px; /* Reduce gap between links */
+    display: flex;
+    flex-direction: column; /* Ensure links are stacked vertically */
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adjust gap between icon and text */
+    justify-content: flex-start; /* Align items to the left */
+  }
+
+  .link a {
+    font-size: 24px; /* Adjust font size of links */
+  }
+}
+
+/* Media Query for Small Screens (up to 480px) */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 40px 5%; /* Adjust padding for smaller screens */
+  }
+
+  .text h2 {
+    font-size: 40px; /* Further reduce font size */
+  }
+
+  .text p {
+    font-size: 20px; /* Further reduce font size */
+  }
+
+  .links {
+    gap: 15px; /* Reduce gap between links */
+  }
+
+  .link {
+    gap: 10px; /* Reduce gap between icon and text */
+  }
+
+  .link a {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+}

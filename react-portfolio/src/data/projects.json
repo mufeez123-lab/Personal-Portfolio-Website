@@ -1,0 +1,19 @@
+[
+    {
+      "title": "Smart Attendance System",
+      "imageSrc": "projects/smartatt.webp",
+      "description": "A face-recognition-based smart attendance system using MERN and Django.",
+      "skills": ["React", "Express", "Node","Django"],
+      "source": "https://github.com/ManoharKumar07/Smart-Attendance-System"
+    },
+    {
+      "title": "Login System",
+      "imageSrc": "projects/login.png",
+      "description": "Login Authentication generates successful login, and Authorization ",
+      "skills": ["React", "Express", "Node", "MongoDB"],
+      
+      "source": "https://github.com/mufeez123-lab/Login-Systems"
+    }
+   
+  ]
+  

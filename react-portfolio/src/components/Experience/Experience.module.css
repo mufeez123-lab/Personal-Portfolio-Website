@@ -1,0 +1,190 @@
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin-top: 79px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 14px;
+}
+
+.skills {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+}
+
+.skillImageContainer {
+  background-color: var(--color-secondary);
+  border-radius: 100%; /* Circular container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+}
+
+.skillImageContainer img {
+  width: 70%; /* Makes image fit the width of the container */
+  height: 60%; /* Makes image fit the height of the container */
+  object-fit: cover; /* Ensures the image covers the circular container without distortion */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+}
+
+/* Zoom-in effect when hovered */
+.skillImageContainer:hover, .skillImageContainer img:hover {
+  transform: scale(1.1); /* Zoom-in by 10% */
+}
+
+.skill p {
+  font-size: 25px;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+}
+
+.history {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Reduced gap for a more compact layout */
+}
+
+.historyItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+  background: #19376d;
+  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+  border-radius: 10px;
+  padding: 18px; /* Reduced padding for a smaller item */
+  transition: transform 0.7s ease-in-out;
+}
+
+/* Fully round images in history section with larger size */
+.historyItem img {
+  width: 80px; /* Increased image size */
+  height: 80px; /* Increased image size */
+  border-radius: 50%; /* Fully round the images */
+  object-fit:fill; /* Ensures the image fits the circle without distortion */
+  transition: transform 0.5s ease-in-out, background-color 0.3s ease-in-out; /* Add transition for background color */
+}
+
+/* New hover effect: White background when hovering the image */
+.historyItem img:hover {
+  background-color: white; /* Apply white background on hover */
+  padding: 5px; /* Add padding around the image */
+}
+
+/* Zoom-in effect when hovered */
+.historyItem:hover, .historyItem img:hover {
+  transform: scale(1.1); /* Zoom-in by 10% */
+}
+
+.historyItemDetails {
+  font-family: var(--font-roboto);
+}
+
+.historyItemDetails h3 {
+  font-size: 22px; /* Reduced font size */
+  font-weight: 500;
+}
+
+.historyItemDetails p {
+  font-size: 16px; /* Reduced font size */
+  font-weight: 300;
+}
+
+.historyItemDetails ul {
+  margin-top: 6px;
+  list-style-position: inside;
+  font-size: 18px; /* Smaller font size for list items */
+  list-style-type: disc;
+  margin-left: 17px;
+}
+
+/* Link style for View Details */
+.historyItemDetails .link a {
+  color: white; /* White color */
+  text-decoration: none; /* Remove underline */
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Optional: Change link color on hover */
+.historyItemDetails .link a:hover {
+  color: #ffd700; /* Change to a gold/yellow color on hover (adjust as needed) */
+}
+
+@media screen and (max-width: 830px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .historyItem{
+    background-color: #19376d;
+  }
+
+  .skills {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap for better spacing */
+    display: grid; /* Use grid to arrange items */
+    grid-template-columns: repeat(3, 1fr); /* Make 3 columns */
+  }
+
+  .history {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 35px; /* Adjust font size if necessary */
+    font-weight: 700;
+    text-align: center; /* Center-align the title */
+    margin: 0 auto; 
+  }
+
+  /* Adjust image sizes in skills section for small screens */
+  .skillImageContainer {
+    width: 90px; /* Make the circular container smaller */
+    height: 90px; /* Make the circular container smaller */
+  }
+
+  .skillImageContainer img {
+    width: 78%; /* Adjust the image size to fit the smaller container */
+    height: 69%; /* Adjust the image size to fit the smaller container */
+  }
+
+  /* Adjust hover zoom effect */
+  .skillImageContainer:hover, .skillImageContainer img:hover {
+    transform: scale(1.1); /* Zoom-in effect remains */
+  }
+}

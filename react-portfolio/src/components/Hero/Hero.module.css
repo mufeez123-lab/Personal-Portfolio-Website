@@ -1,0 +1,211 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 49px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+/* Typewriter animation for title */
+.title {
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 33px;
+  font-family: var(--font-roboto);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 0) 120%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid rgba(255, 255, 255, 0.75); /* Cursor effect */
+  width: 0;
+  animation: typewriter  steps(30) 1s forwards, blink 0.75s step-end infinite, cursorRemoval 2.5s forwards; /* Typewriter effect */
+}
+
+/* Keyframe for typewriter effect */
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Blinking cursor effect */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Remove the cursor after typewriter animation completes */
+@keyframes cursorRemoval {
+  0% {
+    border-right: 4px solid rgba(255, 255, 255, 0.75);
+  }
+  100% {
+    border-right: none;
+  }
+}
+
+.description {
+  font-size: 30px;
+  font-family: var(--font-roboto);
+  margin-bottom: 52px;
+}
+
+.contactBtn {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border-radius: 100px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 17px 26px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.heroImg {
+  width: 35%; /* Reduce width to make the image smaller */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 1;
+
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border-radius: 277px; /* You can keep or adjust the border-radius */
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.topBlur {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  min-width: 350px;
+  top: -128px;
+  left: -10vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.bottomBlur {
+  position: absolute;
+  width: 70vw;
+  height: 50vw;
+  min-width: 350px;
+  top: 246px;
+  right: -25vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+    margin: 0 5%;
+  }
+
+  .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Adjusting title font size for smaller screens */
+  .title {
+    font-size: 48px; /* Smaller font size for mobile devices */
+    margin-bottom: 24px;
+    animation: typewriter  steps(25) 1.5s forwards, blink 0.75s step-end infinite, cursorRemoval 2.5s forwards; /* Adjusted animation duration */
+  }
+
+  /* Adjust description font size */
+  .description {
+    font-size: 24px; /* Smaller description text */
+  }
+
+  /* Button adjustments for smaller screens */
+  .contactBtn {
+    font-size: 25px;
+    padding: 12px 22px;
+  }
+
+  .heroImg {
+    width: 50%; /* Larger image size on mobile */
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  /* Adjust image animation for smaller screens */
+  .heroImg {
+    width: 60%;
+  }
+
+  .topBlur {
+    width: 70vw;
+    height: 70vw;
+    top: -90px;
+    left: -20vw;
+  }
+
+  .bottomBlur {
+    width: 80vw;
+    height: 80vw;
+    top: 200px;
+    right: -30vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 36px; /* Even smaller title for very small screens */
+  }
+
+  .description {
+    font-size: 18px; /* Even smaller description text */
+  }
+
+  .heroImg {
+    width: 40%;
+  }
+
+  .contactBtn {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+}

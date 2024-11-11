@@ -1,0 +1,28 @@
+[
+  {
+    "role": "MERN Stack API Development Intern",
+    "organisation": "Codelab Systems",
+    "startDate": "June, 2023",
+    "endDate": "July, 2023",
+    "experiences": [
+      "Worked on API Creation",
+      "Creating the Server side"
+    ],
+    "imageSrc": "history/codelab.png",
+    "url": "https://www.linkedin.com/posts/mufeez-692840211_codelabsystems-activity-7261579968025960448-X6iX?utm_source=share&utm_medium=member_desktop",
+    "linkLine": "<a href='https://www.linkedin.com/posts/mufeez-692840211_codelabsystems-activity-7261579968025960448-X6iX?utm_source=share&utm_medium=member_desktop' target='_blank'>View Codelab Systems Internship Details</a>"
+  },
+  {
+    "role": "FullStack Developer Intern",
+    "organisation": "Cognifyz Technologies",
+    "startDate": "Aug, 2024",
+    "endDate": "Nov, 2024",
+    "experiences": [
+      "Creating fullstack app",
+      "Authorization and Authentication"
+    ],
+    "imageSrc": "history/cognifyz.png",
+    "url": "https://www.linkedin.com/posts/mufeez-692840211_cognifyz-activity-7246740406057480192-l2mG?utm_source=share&utm_medium=member_desktop",
+    "linkLine": "<a href='https://www.linkedin.com/posts/mufeez-692840211_cognifyz-activity-7246740406057480192-l2mG?utm_source=share&utm_medium=member_desktop' target='_blank'>Visit Cognifyz Technologies</a>"
+  }
+]

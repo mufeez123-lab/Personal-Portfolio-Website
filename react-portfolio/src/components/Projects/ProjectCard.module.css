@@ -1,0 +1,128 @@
+/* Default card style */
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+  box-shadow: 0 16px 14px 0 #04152d;
+  padding: 18px 24px;
+  width: 100%;
+  max-width: 400px; /* Max width on large screens */
+  box-sizing: border-box;
+  margin: 20px;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  height: 342px;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  justify-content: center;
+}
+
+.skill {
+  font-size: 16px;
+  font-weight: 400;
+  background: var(--color-dark);
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 100px;
+  background: var(--color-primary);
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium Screens (830px to 480px) */
+@media screen and (max-width: 830px) {
+  .container {
+    max-width: 80%; /* Reduce width on medium screens */
+    margin: 1px; /* Adjust margin */
+    
+  }
+
+  .title {
+    font-size: 22px; /* Adjust title font size */
+  }
+
+  .description {
+    font-size: 16px; /* Adjust description font size */
+  }
+
+  .skill {
+    font-size: 14px; /* Adjust skill font size */
+    padding: 4px 10px; /* Adjust padding */
+  }
+
+  .link {
+    font-size: 16px; /* Adjust link font size */
+    padding: 8px 16px; /* Adjust padding */
+  }
+}
+
+/* Small Screens (480px and below) */
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 100%; /* Full width on small screens */
+    padding: 12px; /* Adjust padding */
+    
+  }
+
+  .title {
+    font-size: 18px; /* Further reduce title font size */
+  }
+
+  .description {
+    font-size: 14px; /* Further reduce description font size */
+  }
+
+  .skills {
+    gap: 6px; /* Adjust gap between skills */
+  }
+
+  .skill {
+    font-size: 12px; /* Further reduce skill font size */
+    padding: 4px 8px; /* Adjust padding */
+  }
+
+  .link {
+    font-size: 14px; /* Further reduce link font size */
+    padding: 6px 14px; /* Adjust padding */
+  }
+}
