@@ -15,7 +15,7 @@ Welcome to the **Project Name** repository! This is a responsive React-based pro
 - [Usage](#usage)
 - [Customization](#customization)
 - [Contributing](#contributing)
-- [License](#license)
+  
 
 ---
 
