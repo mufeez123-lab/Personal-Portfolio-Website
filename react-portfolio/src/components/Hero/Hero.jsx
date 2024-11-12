@@ -11,7 +11,7 @@ export const Hero = () => {
         <p className={styles.description}>
         MERN stack developer with experience in building dynamic applications. Reach out to learn more!
         </p>
-        <a href="mailto:myemail@email.com" className={styles.contactBtn}>
+        <a href="mailto:mufizmalar@gmail.com" className={styles.contactBtn}>
           Contact Me
         </a>
       </div>
