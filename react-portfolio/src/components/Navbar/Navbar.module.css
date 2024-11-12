@@ -65,8 +65,9 @@
     align-items: center;
     gap: 13px;
     border-radius: 10px;
-    background: rgb(25, 55, 109);
-    background: black;
+    background-color: transparent;
+    background: linear-gradient(to right, rgba(40, 52, 109, 0.8), rgba(49, 32, 32, 0.4)), #000;
+
     padding: 24px 129px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
     
