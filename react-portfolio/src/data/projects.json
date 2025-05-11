@@ -13,6 +13,14 @@
       "skills": ["React", "Express", "Node", "MongoDB"],
       
       "source": "https://github.com/mufeez123-lab/Login-Systems"
+    },
+    {
+      "title": "Invoice Software",
+      "imageSrc": "projects/skydiaomonds.png",
+      "description": "Invoice Software for Skydiamonds dream Jewellery Dubai ",
+      "skills": ["React", "Express", "Node", "MongoDB Atlas","Vercel","Render"],
+      
+      "source": "https://github.com/mufeez123-lab/Invoice-Software"
     }
    
   ]
